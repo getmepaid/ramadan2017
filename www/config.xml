@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.showdental.realdeal"
+        id        = "com.realdealagency.ramadan2017"
         version   = "1.0.0">
 
-    <name>Showdental</name>
+    <name>مسلسلات رمضان 2017</name>
 
     <description>
-        Showdental
+        مسلسلات رمضان 2017
     </description>
 
-    <author href="http://www.showdental.com" email="info@showdental.com">
-        Showdental
+    <author href="http://www.realdealagency.com" email="info@realdealagency.com">
+        Real Deal
     </author>
 
     <preference name="phonegap-version" value="3.0.0" /> 
