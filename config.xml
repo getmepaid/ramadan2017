@@ -21,8 +21,8 @@
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" source="npm"/>
   <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
-  <icon src="2017series.png"/>
-  <gap:splash src="2017series.png"/>
+  <icon src="icon-2017series.png"/>
+  <gap:splash src="splash-2017series.png"/>
   <preference name="SplashScreen" value="screen" />
   <preference name="SplashScreenDelay" value="40000" />
   <access origin="*"/>
