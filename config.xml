@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.alaaka.com" version="1.0.0">
-  <name>Showdental</name>
-  <description>Showdental.</description>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.realdealagency.ramadan2017" version="1.0.0">
+  <name>مسلسلات رمضان 2017</name>
+  <description>مسلسلات رمضان 2017</description>
   <author href="http://realdealagency.com" email="support@realdealagency.com">Real Deal Team</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
