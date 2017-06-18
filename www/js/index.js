@@ -16,15 +16,28 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+	    //function(strUrl, originx, originy, width, height, isAutoFadeIn)
+	    oab = new OverAppBrowser('https://ramadan.ovplatform.tk/Mosalsallat/', 0, 50, 320, 320, true);
+
+	    //Events : loadstop, loadstart, exit, loaderror
+		oab.addEventListener('loadstop', function(){
+	    });
+
+	    //Fade the webview
+	    oab.fade(toAlpha, duration);
+
+	    //Resize the webview
+	    oab.resize(originx, originy, width, height);
+
        // app.receivedEvent('deviceready');
 	   //window.open('http://youfeellike.sharedin.net', '_blank', 'location=no')
-	   var inAppBrowserbRef;
+	   /*var inAppBrowserbRef;
        inAppBrowserbRef = window.open('https://ramadan.ovplatform.tk/Mosalsallat/', '_blank', 'location=no,toolbar=no');
          inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
          inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
          inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
          inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
-
+*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -72,10 +85,12 @@ function inAppBrowserbLoadError(event) {
 function inAppBrowserbClose(event) {
 	 //navigator.notification.activityStop();
 	 //alert(event.type);
-	 inAppBrowserbRef.removeEventListener('loadstart', iabLoadStart);
+	 /*inAppBrowserbRef.removeEventListener('loadstart', iabLoadStart);
 	 inAppBrowserbRef.removeEventListener('loadstop', iabLoadStop);
 	 inAppBrowserbRef.removeEventListener('loaderror', iabLoadError);
 	 inAppBrowserbRef.removeEventListener('exit', iabClose);
+	 */
+	oab.removeEventListener('loadstart', iabLoadStart);
 	 if(navigator.app){
         navigator.app.exitApp();
 	 }else if(navigator.device){
