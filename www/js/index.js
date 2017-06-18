@@ -16,6 +16,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+	    var oab;
 	    //function(strUrl, originx, originy, width, height, isAutoFadeIn)
 	    oab = new OverAppBrowser('https://ramadan.ovplatform.tk/Mosalsallat/', 0, 50, 320, 320, true);
 
