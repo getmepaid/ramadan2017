@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.realdealagency.ramadan2017"
-        version   = "1.3.0">
+        version   = "1.4.0">
 
     <name>مسلسلات رمضان 2017</name>
 
@@ -18,5 +18,6 @@
 
     <preference name="phonegap-version" value="3.0.0" /> 
 
-    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
+    <!-- gap:plugin name="org.apache.cordova.core.inappbrowser" / -->
+    <gap:plugin name="com.lesfrancschatons.cordova.plugins.overappbrowser" source="npm" />
 </widget>
